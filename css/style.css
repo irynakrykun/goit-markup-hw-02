@@ -1,0 +1,68 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-bgc-color: #ffffff;
+}
+
+.body {
+  background-color: var(--primery-bgc-color);
+  color: var(--primery-text-color);
+}
+ul {
+  list-style: none;
+}
+/*Навігація header*/
+.logo {
+  color: var(--title-text-color);
+}
+.colortext {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.adress-list .link {
+  color: var(--primery-text-color);
+}
+.adress-list .link:hover,
+.adress-list .link:focus {
+  color: var(--accent-color);
+}
+/*Hero*/
+.hero-section {
+  color: var(--title-text-color);
+}
+.button {
+  color: var(--primery-bgc-color);
+  background-color: var(--accent-color);
+}
+/*Feuaters*/
+.featur-list.title {
+  color: var(--title-text-color);
+}
+/*Section*/
+.section.title {
+  color: var(--title-text-color);
+}
+/*Team*/
+.team-list.title {
+  color: var(--title-text-color);
+}
+/*footer*/
+.adress-list.colortext {
+  color: var(--primery-bgc-color);
+}
+
+/*Основний колір текста-- #212121*/
+/*другий колір тексту #757575/*/
+/*білий колір bgc/ --#FFFFFF*/
+/* accent-- #2196F3*/ ;
