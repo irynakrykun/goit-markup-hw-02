@@ -3,21 +3,42 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-bgc-color: #ffffff;
+  --primery-background-color-section: #e5e5e5;
 }
 /*другий колір тексту #757575/*/
 /*білий колір bgc/ --#FFFFFF*/
 /* accent-- #2196F3*/
 /*Основний колір текста-- #212121*/
 
-.body {
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
   background-color: var(--primery-bgc-color);
   color: var(--primery-text-color);
-  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+address {
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
 }
 ul {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*Навігація header*/
 .logo {
   color: var(--title-text-color);
@@ -57,7 +78,8 @@ ul {
 }
 /*Hero*/
 .hero-title {
-  color: var(--title-text-color);
+  background-color: #2f303a;
+  color: var(--primery-bgc-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -66,6 +88,8 @@ ul {
   text-transform: uppercase;
 }
 .button {
+  font-family: inherit;
+  background-color: #2196f3;
   color: var(--primery-bgc-color);
   cursor: pointer;
   font-weight: 700;
@@ -78,9 +102,13 @@ ul {
 }
 .button:hover,
 .button:focus {
+  background-color: #2196f3;
   color: var(--accent-color);
 }
 /*Features*/
+.features {
+  background-color: var(--primery-background-color-section);
+}
 .features-list > .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -95,6 +123,9 @@ ul {
   letter-spacing: 0.03em;
 }
 /*Section work*/
+.work {
+  background-color: var(--primery-background-color-section);
+}
 .work-title,
 .team-title {
   color: var(--title-text-color);
@@ -105,6 +136,9 @@ ul {
   letter-spacing: 0.03em;
 }
 /*Team*/
+.team {
+  background-color: var(--primery-background-color-section);
+}
 .team-list-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -113,17 +147,22 @@ ul {
   letter-spacing: 0.03em;
 }
 .team-text {
+  color: var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 /*footer*/
-.footer-list.colortext {
+.footer {
+  background-color: #2f303a;
+  color: var(--primery-bgc-color);
+}
+.footer .logo {
   color: var(--primery-bgc-color);
 }
 .footer-list .link {
-  color: var(--primery-text-color);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -136,6 +175,8 @@ ul {
 
 /*Portfolio*/
 .btn {
+  font-family: inherit;
+  background-color: #f5f4fa;
   color: var(--title-text-color);
   cursor: pointer;
   font-weight: 500;
@@ -145,9 +186,13 @@ ul {
 }
 .btn:hover,
 .btn:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--primery-bgc-color);
 }
 /*Section-Portfolio*/
+.portfolio {
+  background-color: #e5e5e5;
+}
 .portfolio-headline {
   color: var(--title-text-color);
   font-weight: 700;
