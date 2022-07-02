@@ -3,7 +3,9 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-bgc-color: #ffffff;
-  --primery-background-color-section: #e5e5e5;
+  --primery-background-color-section: #f5f4fa;
+  --color-footer-header: #2f303a;
+  --background-color-btn: #188ce8;
 }
 /*другий колір тексту #757575/*/
 /*білий колір bgc/ --#FFFFFF*/
@@ -77,8 +79,10 @@ ul {
   color: var(--accent-color);
 }
 /*Hero*/
+.hero {
+  background-color: var(--color-footer-header);
+}
 .hero-title {
-  background-color: #2f303a;
   color: var(--primery-bgc-color);
   font-weight: 900;
   font-size: 44px;
@@ -88,8 +92,8 @@ ul {
   text-transform: uppercase;
 }
 .button {
+  background-color: var(--accent-color);
   font-family: inherit;
-  background-color: #2196f3;
   color: var(--primery-bgc-color);
   cursor: pointer;
   font-weight: 700;
@@ -102,30 +106,23 @@ ul {
 }
 .button:hover,
 .button:focus {
-  background-color: #2196f3;
-  color: var(--accent-color);
+  background-color: var(--background-color-btn);
 }
 /*Features*/
-.features {
-  background-color: var(--primery-background-color-section);
-}
-.features-list > .title {
+
+.features-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.features-list > .text {
-  font-weight: 400;
+.features-list .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 /*Section work*/
-.work {
-  background-color: var(--primery-background-color-section);
-}
 .work-title,
 .team-title {
   color: var(--title-text-color);
@@ -148,14 +145,13 @@ ul {
 }
 .team-text {
   color: var(--primery-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 /*footer*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-footer-header);
   color: var(--primery-bgc-color);
 }
 .footer .logo {
@@ -168,15 +164,15 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer-list .link:hover,
-.footer-list .link:focus {
+address .link:hover,
+address .link:focus {
   color: var(--accent-color);
 }
 
 /*Portfolio*/
 .btn {
   font-family: inherit;
-  background-color: #f5f4fa;
+  background-color: var(--primery-background-color-section);
   color: var(--title-text-color);
   cursor: pointer;
   font-weight: 500;
@@ -189,10 +185,9 @@ ul {
   background-color: var(--accent-color);
   color: var(--primery-bgc-color);
 }
+
 /*Section-Portfolio*/
-.portfolio {
-  background-color: #e5e5e5;
-}
+
 .portfolio-headline {
   color: var(--title-text-color);
   font-weight: 700;
@@ -200,9 +195,8 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio-headline .text {
+.portfolio-item .text {
   color: var(--primery-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
