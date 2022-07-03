@@ -22,7 +22,8 @@ body {
 address {
   font-style: normal;
 }
-.link {
+.link,
+.adress-link {
   text-decoration: none;
 }
 ul {
@@ -116,6 +117,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .features-list .text {
   font-size: 14px;
@@ -157,7 +159,8 @@ ul {
 .footer .logo {
   color: var(--primery-bgc-color);
 }
-.footer-list .link {
+.footer-list .link,
+.adress-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -166,6 +169,13 @@ ul {
 }
 address .link:hover,
 address .link:focus {
+  color: var(--accent-color);
+}
+.adress-link {
+  color: var(--primery-bgc-color);
+}
+.adress-link:hover,
+.adress-link:focus {
   color: var(--accent-color);
 }
 
